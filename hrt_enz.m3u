@@ -1,110 +1,110 @@
 #EXTM3U
 
-#EXTINF:7200 tvg-id="HRT_ENZ_1" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 1 - HRT ENZ - agXdYCVgPWJA6xMx.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:agXdYCVgPWJA6xMx.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_1" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 1 - HRT ENZ - Epizoda agXdYCVg
+https://streaming.hrt.hr/webstream/smil:agXdYCVgPWJA6xMx/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_2" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 2 - HRT ENZ - VQkwR6j2hnF498jw.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:VQkwR6j2hnF498jw.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_2" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 2 - HRT ENZ - Epizoda VQkwR6j2
+https://streaming.hrt.hr/webstream/smil:VQkwR6j2hnF498jw/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_3" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 3 - HRT ENZ - YJ8ahPVhwZDZ5EkZ.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:YJ8ahPVhwZDZ5EkZ.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_3" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 3 - HRT ENZ - Epizoda YJ8ahPVh
+https://streaming.hrt.hr/webstream/smil:YJ8ahPVhwZDZ5EkZ/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_4" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 4 - HRT ENZ - 4Zu43fQY4R4MGEes.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:4Zu43fQY4R4MGEes.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_4" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 4 - HRT ENZ - Epizoda 4Zu43fQY
+https://streaming.hrt.hr/webstream/smil:4Zu43fQY4R4MGEes/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_5" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 5 - HRT ENZ - s96athKHMkJXuUSy.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:s96athKHMkJXuUSy.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_5" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 5 - HRT ENZ - Epizoda s96athKH
+https://streaming.hrt.hr/webstream/smil:s96athKHMkJXuUSy/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_6" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 6 - HRT ENZ - hS4vzGc9d68xmVdp.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:hS4vzGc9d68xmVdp.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_6" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 6 - HRT ENZ - Epizoda hS4vzGc9
+https://streaming.hrt.hr/webstream/smil:hS4vzGc9d68xmVdp/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_7" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 7 - HRT ENZ - Kx26YjyYEsxyhHjJ.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:Kx26YjyYEsxyhHjJ.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_7" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 7 - HRT ENZ - Epizoda Kx26YjyY
+https://streaming.hrt.hr/webstream/smil:Kx26YjyYEsxyhHjJ/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_8" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 8 - HRT ENZ - 47DC2pBnsr7QDXAg.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:47DC2pBnsr7QDXAg.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_8" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 8 - HRT ENZ - Epizoda 47DC2pBn
+https://streaming.hrt.hr/webstream/smil:47DC2pBnsr7QDXAg/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_9" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 9 - HRT ENZ - Eda5M4dFd5S4x5ve.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:Eda5M4dFd5S4x5ve.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_9" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 9 - HRT ENZ - Epizoda Eda5M4dF
+https://streaming.hrt.hr/webstream/smil:Eda5M4dFd5S4x5ve/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_10" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 10 - HRT ENZ - RFjS23u2z6nhuHzg.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:RFjS23u2z6nhuHzg.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_10" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 10 - HRT ENZ - Epizoda RFjS23u2
+https://streaming.hrt.hr/webstream/smil:RFjS23u2z6nhuHzg/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_11" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 11 - HRT ENZ - TurqjQrnDu3rM6Y3.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:TurqjQrnDu3rM6Y3.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_11" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 11 - HRT ENZ - Epizoda TurqjQrn
+https://streaming.hrt.hr/webstream/smil:TurqjQrnDu3rM6Y3/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_12" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 12 - HRT ENZ - QGwjjW9T7f2ucqFA.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:QGwjjW9T7f2ucqFA.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_12" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 12 - HRT ENZ - Epizoda QGwjjW9T
+https://streaming.hrt.hr/webstream/smil:QGwjjW9T7f2ucqFA/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_13" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 13 - HRT ENZ - spyC8rHeyS3bptPu.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:spyC8rHeyS3bptPu.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_13" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 13 - HRT ENZ - Epizoda spyC8rHe
+https://streaming.hrt.hr/webstream/smil:spyC8rHeyS3bptPu/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_14" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 14 - HRT ENZ - c9H3FejtFkEvMtkS.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:c9H3FejtFkEvMtkS.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_14" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 14 - HRT ENZ - Epizoda c9H3Fejt
+https://streaming.hrt.hr/webstream/smil:c9H3FejtFkEvMtkS/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_15" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 15 - HRT ENZ - CSwx28zNHNPahcjN.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:CSwx28zNHNPahcjN.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_15" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 15 - HRT ENZ - Epizoda CSwx28zN
+https://streaming.hrt.hr/webstream/smil:CSwx28zNHNPahcjN/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_16" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 16 - HRT ENZ - X7327kwsTW5jjydj.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:X7327kwsTW5jjydj.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_16" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 16 - HRT ENZ - Epizoda X7327kws
+https://streaming.hrt.hr/webstream/smil:X7327kwsTW5jjydj/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_17" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 17 - HRT ENZ - 7cQWCyAfEAr3XSez.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:7cQWCyAfEAr3XSez.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_17" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 17 - HRT ENZ - Epizoda 7cQWCyAf
+https://streaming.hrt.hr/webstream/smil:7cQWCyAfEAr3XSez/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_18" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 18 - HRT ENZ - BcDTAeweHKpVKufG.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:BcDTAeweHKpVKufG.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_18" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 18 - HRT ENZ - Epizoda BcDTAewe
+https://streaming.hrt.hr/webstream/smil:BcDTAeweHKpVKufG/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_19" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 19 - HRT ENZ - X5vmgFCUUSwZsNBa.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:X5vmgFCUUSwZsNBa.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_19" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 19 - HRT ENZ - Epizoda X5vmgFCU
+https://streaming.hrt.hr/webstream/smil:X5vmgFCUUSwZsNBa/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_20" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 20 - HRT ENZ - D5M5NRbcSJHXR6EM.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:D5M5NRbcSJHXR6EM.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_20" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 20 - HRT ENZ - Epizoda D5M5NRbc
+https://streaming.hrt.hr/webstream/smil:D5M5NRbcSJHXR6EM/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_21" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 21 - HRT ENZ - cyqnxevQKTHMUBjZ.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:cyqnxevQKTHMUBjZ.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_21" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 21 - HRT ENZ - Epizoda cyqnxevQ
+https://streaming.hrt.hr/webstream/smil:cyqnxevQKTHMUBjZ/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_22" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 22 - HRT ENZ - pQ59ZKY76rCNbtwJ.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:pQ59ZKY76rCNbtwJ.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_22" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 22 - HRT ENZ - Epizoda pQ59ZKY7
+https://streaming.hrt.hr/webstream/smil:pQ59ZKY76rCNbtwJ/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_23" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 23 - HRT ENZ - ej2sPyfrB3xuRg4e.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:ej2sPyfrB3xuRg4e.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_23" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 23 - HRT ENZ - Epizoda ej2sPyfr
+https://streaming.hrt.hr/webstream/smil:ej2sPyfrB3xuRg4e/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_24" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 24 - HRT ENZ - g4D6b3SgxtTmT2EQ.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:g4D6b3SgxtTmT2EQ.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_24" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 24 - HRT ENZ - Epizoda g4D6b3Sg
+https://streaming.hrt.hr/webstream/smil:g4D6b3SgxtTmT2EQ/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_25" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 25 - HRT ENZ - 4CNHnEuwkQXGdEBd.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:4CNHnEuwkQXGdEBd.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_25" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 25 - HRT ENZ - Epizoda 4CNHnEuw
+https://streaming.hrt.hr/webstream/smil:4CNHnEuwkQXGdEBd/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_26" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 26 - HRT ENZ - q64jd3UaZhAEw7zQ.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:q64jd3UaZhAEw7zQ.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_26" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 26 - HRT ENZ - Epizoda q64jd3Ua
+https://streaming.hrt.hr/webstream/smil:q64jd3UaZhAEw7zQ/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_27" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 27 - HRT ENZ - USzGVAV6rRM8anDx.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:USzGVAV6rRM8anDx.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_27" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 27 - HRT ENZ - Epizoda USzGVAV6
+https://streaming.hrt.hr/webstream/smil:USzGVAV6rRM8anDx/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_28" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 28 - HRT ENZ - R4FnrqVhRP55MsbH.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:R4FnrqVhRP55MsbH.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_28" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 28 - HRT ENZ - Epizoda R4FnrqVh
+https://streaming.hrt.hr/webstream/smil:R4FnrqVhRP55MsbH/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_29" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 29 - HRT ENZ - Ck3RkPM2VwwanDuy.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:Ck3RkPM2VwwanDuy.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_29" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 29 - HRT ENZ - Epizoda Ck3RkPM2
+https://streaming.hrt.hr/webstream/smil:Ck3RkPM2VwwanDuy/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_30" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 30 - HRT ENZ - uAqcdeA2VWQXGp5z.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:uAqcdeA2VWQXGp5z.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_30" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 30 - HRT ENZ - Epizoda uAqcdeA2
+https://streaming.hrt.hr/webstream/smil:uAqcdeA2VWQXGp5z/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_31" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 31 - HRT ENZ - HTrMnnxFWcxjQHhv.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:HTrMnnxFWcxjQHhv.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_31" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 31 - HRT ENZ - Epizoda HTrMnnxF
+https://streaming.hrt.hr/webstream/smil:HTrMnnxFWcxjQHhv/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_32" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 32 - HRT ENZ - ggt7FaakkkQvV8kK.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:ggt7FaakkkQvV8kK.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_32" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 32 - HRT ENZ - Epizoda ggt7Faak
+https://streaming.hrt.hr/webstream/smil:ggt7FaakkkQvV8kK/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_33" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 33 - HRT ENZ - 6WDYww6ECN5hewX8.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:6WDYww6ECN5hewX8.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_33" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 33 - HRT ENZ - Epizoda 6WDYww6E
+https://streaming.hrt.hr/webstream/smil:6WDYww6ECN5hewX8/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_34" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 34 - HRT ENZ - h7RqBDfvHB6aj24D.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:h7RqBDfvHB6aj24D.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_34" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 34 - HRT ENZ - Epizoda h7RqBDfv
+https://streaming.hrt.hr/webstream/smil:h7RqBDfvHB6aj24D/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_35" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 35 - HRT ENZ - Yp4WZPnYC4Ta6uds.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:Yp4WZPnYC4Ta6uds.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_35" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 35 - HRT ENZ - Epizoda Yp4WZPnY
+https://streaming.hrt.hr/webstream/smil:Yp4WZPnYC4Ta6uds/playlist.m3u8
 
-#EXTINF:7200 tvg-id="HRT_ENZ_36" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 36 - HRT ENZ - p6ATrEyZCpw8Yq7p.smil/playlist.m3u8
-https://streaming.hrt.hr/webstream/streaming.hrt.hr/webstream/smil:p6ATrEyZCpw8Yq7p.smil/playlist.m3u8/playlist.m3u8
+#EXTINF:7200 tvg-id="HRT_ENZ_36" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ 36 - HRT ENZ - Epizoda p6ATrEyZ
+https://streaming.hrt.hr/webstream/smil:p6ATrEyZCpw8Yq7p/playlist.m3u8
 
