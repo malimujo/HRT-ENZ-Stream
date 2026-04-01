@@ -72,7 +72,7 @@ def generate_m3u(streams):
     
     m3u_content = "#EXTM3U\n\n"
     for stream in streams:
-        extinf = f'#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ - {stream["title"]}'
+        extinf = f'#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Filmovi",HRT ENZ - {stream["title"]}'
         m3u_content += extinf + "\n"
         m3u_content += stream['url'] + "\n\n"
     
