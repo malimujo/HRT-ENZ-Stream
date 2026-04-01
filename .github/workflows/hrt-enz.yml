@@ -1,0 +1,35 @@
+name: HRT ENZ Streamovi
+on:
+  schedule:
+    - cron: '0 */2 * * *'  # svaka 2 sata
+  workflow_dispatch:
+    inputs:
+      date_override:
+        description: 'Datum (YYYY-MM-DD)'
+        required: false
+        default: ''
+jobs:
+  scrape-hrt-enz:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        pip install requests beautifulsoup4 lxml
+        
+    - name: Scrape HRT ENZ i generiraj M3U
+      run: python scrape_hrt_enz.py
+      
+    - name: Commit M3U
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "HRT ENZ ažurirano $(date)"
+        file_pattern: hrt_enz.m3u
