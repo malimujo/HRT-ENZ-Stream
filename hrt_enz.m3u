@@ -1,6 +1,9 @@
 #EXTM3U
 
 #EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Filmovi",HRT ENZ - HRT ENZ Live
+https://streaming.hrt.hr/webstream/smil:QUhqE2XeUNXjyyw2.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Filmovi",HRT ENZ - HRT ENZ Live
 https://streaming.hrt.hr/webstream/smil:F9tcfrFJNApTJeDz.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Filmovi",HRT ENZ - HRT ENZ Live
