@@ -1,94 +1,85 @@
 #!/usr/bin/env python3
 import requests
 from bs4 import BeautifulSoup
+from datetime import datetime, timedelta
 import re
-import urllib.parse
 
 def scrape_hrt_enz():
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
     }
     
-    print("🔍 Pronalazim HRT ENZ videe...")
-    
-    # 1. Glavna stranica
-    response = requests.get("https://enz.hrt.hr/", headers=headers, timeout=15)
+    print("🔍 Analiziram https://enz.hrt.hr/...")
+    response = requests.get("https://enz.hrt.hr/", headers=headers, timeout=10)
     soup = BeautifulSoup(response.text, 'html.parser')
     
-    all_videos = []
+    all_streams = []
     
-    # 2. Pronađi SMIL/m3u8 linkove
-    for script in soup.find_all('script'):
-        if script.string:
-            smil_ids = re.findall(r'smil:([a-zA-Z0-9]{10,})', script.string)
-            for smil_id in smil_ids:
-                m3u8_url = f"https://streaming.hrt.hr/webstream/smil:{smil_id}/playlist.m3u8"
-                
-                # TESTIRAJ i izvuci MP4 varijante!
-                mp4_variants = extract_mp4_from_m3u8(m3u8_url)
-                for mp4_url in mp4_variants:
-                    all_videos.append({
-                        'url': mp4_url,
-                        'title': f"HRT ENZ - {smil_id[:8]}",
-                        'type': 'mp4_vod'
-                    })
-                    print(f"✅ MP4 VOD: {mp4_url}")
+    # Traži sve m3u8 linkove na glavnoj stranici
+    print("🔍 Tražim m3u8 linkove...")
     
-    # 3. Direktni MP4 linkovi (VOD)
+    # 1. Anchor linkovi
     for link in soup.find_all('a', href=True):
         href = link['href']
-        if '.mp4' in href or '.mkv' in href:
-            full_url = urllib.parse.urljoin("https://enz.hrt.hr/", href)
-            all_videos.append({
-                'url': full_url,
-                'title': link.get_text(strip=True) or 'HRT ENZ Film',
-                'type': 'mp4_direct'
+        if href.endswith('.m3u8') or '.m3u8' in href:
+            all_streams.append({
+                'url': href if href.startswith('http') else f"https://enz.hrt.hr{href}",
+                'title': link.get_text(strip=True) or 'HRT ENZ Stream',
+                'date': 'danas'
             })
-            print(f"✅ Direct MP4: {full_url}")
+            print(f"✅ Anchor: {href}")
     
-    unique_videos = remove_duplicates(all_videos)
-    generate_movies_m3u(unique_videos)
+    # 2. Script tagovi (najčešće lokacija streamova)
+    for script in soup.find_all('script'):
+        if script.string:
+            m3u8_matches = re.findall(r'(https?://[^\s"\']+\.m3u8[^\s"\']*)', script.string)
+            for match in m3u8_matches:
+                all_streams.append({
+                    'url': match,
+                    'title': 'HRT ENZ Live',
+                    'date': 'danas'
+                })
+                print(f"✅ Script: {match}")
+    
+    # 3. Video tagovi
+    for video in soup.find_all('video'):
+        sources = video.find_all('source')
+        for source in sources:
+            src = source.get('src')
+            if src and '.m3u8' in src:
+                all_streams.append({
+                    'url': src,
+                    'title': 'HRT ENZ Video',
+                    'date': 'danas'
+                })
+    
+    # Ukloni duplikate
+    seen_urls = set()
+    unique_streams = []
+    for stream in all_streams:
+        if stream['url'] not in seen_urls:
+            unique_streams.append(stream)
+            seen_urls.add(stream['url'])
+    
+    generate_m3u(unique_streams)
 
-def extract_mp4_from_m3u8(m3u8_url):
-    """Izvući MP4 segmentne linkove iz m3u8 playliste"""
-    try:
-        resp = requests.get(m3u8_url, headers={'User-Agent': 'VLC/3.0.20'}, timeout=10)
-        if resp.status_code != 200:
-            return []
-        
-        mp4_links = re.findall(r'(https?://[^\s]+\.mp4(?:\?[^"\s]+)?)', resp.text)
-        return list(set(mp4_links))  # ukloni duplikate
-        
-    except:
-        return []
-
-def remove_duplicates(videos):
-    seen = set()
-    unique = []
-    for video in videos:
-        if video['url'] not in seen:
-            unique.append(video)
-            seen.add(video['url'])
-    return unique
-
-def generate_movies_m3u(videos):
-    if not videos:
-        print("❌ Nema VOD videa!")
+def generate_m3u(streams):
+    if not streams:
+        print("❌ Nema pronađenih streamova!")
         with open('hrt_enz.m3u', 'w') as f:
-            f.write("#EXTM3U\n# HRT ENZ Movies - Nema sadržaja\n")
+            f.write("#EXTM3U\n# Nema HRT ENZ streamova\n")
         return
     
     m3u_content = "#EXTM3U\n\n"
-    for i, video in enumerate(videos, 1):
-        # KRITIČNO za Movies: statički MP4 + dug trajanje + movie tag
-        extinf = f'#EXTINF:10800 movie="yes" tvg-id="HRT_ENZ_{i}" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",🎬 HRT ENZ {i} - {video["title"]}'
+    for stream in streams:
+        extinf = f'#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ - {stream["title"]}'
         m3u_content += extinf + "\n"
-        m3u_content += video['url'] + "\n\n"
+        m3u_content += stream['url'] + "\n\n"
     
     with open('hrt_enz.m3u', 'w', encoding='utf-8') as f:
         f.write(m3u_content)
     
-    print(f"✅ 🎬 {len(videos)} MP4 VOD filmova za Movies!")
+    print(f"✅ Spremljeno {len(streams)} streamova u hrt_enz.m3u")
 
 if __name__ == "__main__":
     scrape_hrt_enz()
