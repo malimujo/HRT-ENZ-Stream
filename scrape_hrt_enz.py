@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
 import re
 
 def scrape_hrt_enz():
@@ -15,71 +14,75 @@ def scrape_hrt_enz():
     
     all_streams = []
     
-    # Traži sve m3u8 linkove na glavnoj stranici
-    print("🔍 Tražim m3u8 linkove...")
-    
-    # 1. Anchor linkovi
+    # 1. Anchor linkovi (.m3u8, .mp4, .mkv)
+    print("🔍 Tražim video linkove...")
     for link in soup.find_all('a', href=True):
         href = link['href']
-        if href.endswith('.m3u8') or '.m3u8' in href:
+        if any(ext in href.lower() for ext in ['.m3u8', '.mp4', '.mkv', '.mov']):
+            full_url = href if href.startswith('http') else f"https://enz.hrt.hr{href}"
             all_streams.append({
-                'url': href if href.startswith('http') else f"https://enz.hrt.hr{href}",
-                'title': link.get_text(strip=True) or 'HRT ENZ Stream',
-                'date': 'danas'
+                'url': full_url.replace('.m3u8', '.mp4'),  # m3u8 → mp4 za Movies
+                'title': link.get_text(strip=True) or 'HRT ENZ Film',
+                'date': 'enz.hrt.hr'
             })
-            print(f"✅ Anchor: {href}")
+            print(f"✅ Anchor: {full_url}")
     
-    # 2. Script tagovi (najčešće lokacija streamova)
+    # 2. Script tagovi (najčešće streamovi)
     for script in soup.find_all('script'):
         if script.string:
-            m3u8_matches = re.findall(r'(https?://[^\s"\']+\.m3u8[^\s"\']*)', script.string)
-            for match in m3u8_matches:
+            # m3u8, mp4 linkovi u JavaScriptu
+            matches = re.findall(r'(https?://[^\s"\']+\.(?:m3u8|mp4|mkv|mov)[^\s"\']*)', script.string)
+            for match in matches:
+                movie_url = match.replace('.m3u8', '.mp4')
                 all_streams.append({
-                    'url': match,
-                    'title': 'HRT ENZ Live',
-                    'date': 'danas'
+                    'url': movie_url,
+                    'title': 'HRT ENZ Movie',
+                    'date': 'script'
                 })
-                print(f"✅ Script: {match}")
+                print(f"✅ Script: {movie_url}")
     
-    # 3. Video tagovi
+    # 3. Video/source tagovi
     for video in soup.find_all('video'):
         sources = video.find_all('source')
         for source in sources:
-            src = source.get('src')
-            if src and '.m3u8' in src:
+            src = source.get('src') or source.get('data-src')
+            if src and any(ext in src.lower() for ext in ['.m3u8', '.mp4', '.mkv']):
+                movie_url = src.replace('.m3u8', '.mp4')
                 all_streams.append({
-                    'url': src,
-                    'title': 'HRT ENZ Video',
-                    'date': 'danas'
+                    'url': movie_url,
+                    'title': video.get('title') or 'HRT ENZ Video',
+                    'date': 'video'
                 })
     
     # Ukloni duplikate
-    seen_urls = set()
-    unique_streams = []
+    seen = set()
+    unique = []
     for stream in all_streams:
-        if stream['url'] not in seen_urls:
-            unique_streams.append(stream)
-            seen_urls.add(stream['url'])
+        if stream['url'] not in seen:
+            unique.append(stream)
+            seen.add(stream['url'])
     
-    generate_m3u(unique_streams)
+    generate_movies_m3u(unique)
 
-def generate_m3u(streams):
+def generate_movies_m3u(streams):
     if not streams:
-        print("❌ Nema pronađenih streamova!")
+        print("❌ Nema video sadržaja!")
         with open('hrt_enz.m3u', 'w') as f:
-            f.write("#EXTM3U\n# Nema HRT ENZ streamova\n")
+            f.write("#EXTM3U\n# HRT ENZ - Nema filmova\n")
         return
     
     m3u_content = "#EXTM3U\n\n"
-    for stream in streams:
-        extinf = f'#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ - {stream["title"]}'
+    for i, stream in enumerate(streams, 1):
+        # MOVIES format za TiviMate
+        duration = "7200"  # 2 sata (dug sadržaj = Movies)
+        extinf = f'#EXTINF:{duration} movie="yes" tvg-id="HRT_ENZ_{i}" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",HRT ENZ - {stream["title"]}'
         m3u_content += extinf + "\n"
         m3u_content += stream['url'] + "\n\n"
     
     with open('hrt_enz.m3u', 'w', encoding='utf-8') as f:
         f.write(m3u_content)
     
-    print(f"✅ Spremljeno {len(streams)} streamova u hrt_enz.m3u")
+    print(f"✅ 🎬 {len(streams)} FILMOVA u Movies grupi!")
 
 if __name__ == "__main__":
     scrape_hrt_enz()
