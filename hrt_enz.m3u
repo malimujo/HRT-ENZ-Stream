@@ -1,2 +1,32 @@
 #EXTM3U
-# Nema HRT ENZ emisija
+
+#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="HRT ENZ",HRT ENZ Stream 1 05-04-2026
+https://streaming.hrt.hr/webstream/smil:myg46UCH5YdCVWnt.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="HRT ENZ",HRT ENZ Stream 2 05-04-2026
+https://streaming.hrt.hr/webstream/smil:c9H3FejtFkEvMtkS.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="HRT ENZ",HRT ENZ Stream 3 05-04-2026
+https://streaming.hrt.hr/webstream/smil:QUhqE2XeUNXjyyw2.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="HRT ENZ",HRT ENZ Stream 4 05-04-2026
+https://streaming.hrt.hr/webstream/smil:f5wsNHJBjYT7fdA8.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="HRT ENZ",HRT ENZ Stream 5 05-04-2026
+https://streaming.hrt.hr/webstream/smil:QFWGqS5kXrNRUbDp.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="HRT ENZ",HRT ENZ Stream 6 05-04-2026
+https://streaming.hrt.hr/webstream/smil:F9tcfrFJNApTJeDz.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="HRT ENZ",HRT ENZ Stream 7 05-04-2026
+https://streaming.hrt.hr/webstream/smil:X7327kwsTW5jjydj.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="HRT ENZ",HRT ENZ Stream 8 05-04-2026
+https://streaming.hrt.hr/webstream/smil:s96athKHMkJXuUSy.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="HRT ENZ",HRT ENZ Stream 9 05-04-2026
+https://streaming.hrt.hr/webstream/smil:4Zu43fQY4R4MGEes.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="HRT ENZ",HRT ENZ Stream 10 05-04-2026
+https://streaming.hrt.hr/webstream/smil:BRQFX4bDAV9PsYq3.smil/playlist.m3u8
+
