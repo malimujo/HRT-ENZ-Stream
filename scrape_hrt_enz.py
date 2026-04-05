@@ -29,7 +29,7 @@ def generate_tivimate_movies_m3u(streams):
     
     for s in streams:
         # **KLJUČNO**: group-title="Movies" za VOD sekciju + seeking
-        extinf = f'#EXTINF:-1 tvg-name="{s["title"]}" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",{s["title"]}'
+        extinf = f'#EXTINF:-1 tvg-type="video" tvg-name="{s["title"]}" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",{s["title"]}'
         m3u += extinf + "\n"
         m3u += s['url'] + "\n\n"
     
