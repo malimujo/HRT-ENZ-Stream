@@ -1,67 +1,44 @@
 #!/usr/bin/env python3
 import requests
 import re
-from datetime import datetime
 
 def scrape_hrt_enz():
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
     }
     
-    print("🔍 Pronalazim displayText za svaki m3u8 link...")
+    print("🔍 Tražim HRT streaming smil playlist.m3u8 + displayText...")
     response = requests.get("https://enz.hrt.hr/", headers=headers, timeout=15)
     text = response.text
     
-    # Pronađi sve m3u8
-    m3u8_pattern = r'(https://streaming\.hrt\.hr/webstream/smil:[^\s\'\"<>]+?/playlist\.m3u8)'
-    m3u8_urls = re.findall(m3u8_pattern, text)
-    m3u8_urls = list(set(m3u8_urls))[:10]  # prvih 10 unique
+    # Pronađi PAROVE: displayText + njegov smil URL (redoslijedom pojavljivanja)
+    pairs = []
+    all_matches = list(re.finditer(r'"displayText"\s*:\s*"([^"]+)"(?=.*?https://streaming\.hrt\.hr/webstream/smil:([^\s\'\"<>]+?)\.smil/playlist\.m3u8)', text, re.DOTALL | re.IGNORECASE))
     
-    streams = []
-    for url in m3u8_urls:
-        title = find_displaytext_for_url(text, url)
-        streams.append({'title': title, 'url': url})
-        print(f"✅ '{title}' -> {url}")
+    for match in all_matches[:10]:  # prvih 10 parova
+        display_text = match.group(1).strip()
+        smil_id = match.group(2)
+        url = f"https://streaming.hrt.hr/webstream/smil:{smil_id}.smil/playlist.m3u8"
+        
+        pairs.append({'title': display_text, 'url': url})
+        print(f"✅ '{display_text}' -> {url}")
     
-    generate_m3u(streams)
-
-def find_displaytext_for_url(page_text, m3u8_url):
-    """Pronađi displayText prije ovog m3u8 URL-a (max 5000 chara prije)"""
-    url_snippet = m3u8_url[:50]  # dio URL-a za brzu pretragu
-    pos = page_text.find(url_snippet)
-    
-    if pos == -1:
-        return f"HRT Stream {m3u8_url.split(':')[-2][:20]}"
-    
-    # Gledaj 5000 chara PRIJE URL-a za displayText
-    before = page_text[max(0, pos-5000):pos]
-    
-    # Pronađi displayText najbliži URL-u
-    display_matches = list(re.finditer(r'"displayText"\s*:\s*"([^"]*)"', before))
-    if display_matches:
-        # Uzmi POSLEDNJI displayText prije URL-a (najbliži)
-        closest = display_matches[-1]
-        return closest.group(1).strip()
-    
-    # Fallback: parse iz URL-a
-    smil_id = m3u8_url.split('smil:')[-1].split('.')[0][:20]
-    return f"HRT ENZ {smil_id}"
+    generate_m3u(pairs)
 
 def generate_m3u(streams):
     if not streams:
-        print("❌ Nema streamova!")
+        print("❌ Nema parova!")
         return
     
-    m3u_content = "#EXTM3U\n\n"
-    for stream in streams:
-        extinf = f'#EXTINF:-1 tvg-id="HRT_ENZ" group-title="HRT ENZ",{stream["title"]}'
-        m3u_content += extinf + "\n"
-        m3u_content += stream['url'] + "\n\n"
+    m3u = "#EXTM3U\n\n"
+    for s in streams:
+        extinf = f'#EXTINF:-1 tvg-id="HRT_ENZ" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="HRT ENZ",{s["title"]}'
+        m3u += extinf + "\n" + s['url'] + "\n\n"
     
     with open('hrt_enz.m3u', 'w', encoding='utf-8') as f:
-        f.write(m3u_content)
+        f.write(m3u)
     
-    print(f"✅ Spremljeno {len(streams)} streamova sa **pripadajućim displayText nazivima**!")
+    print(f"✅ {len(streams)} **TAČNIH** displayText + smil linkova!")
 
 if __name__ == "__main__":
     scrape_hrt_enz()
