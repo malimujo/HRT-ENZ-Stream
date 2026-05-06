@@ -1,6 +1,12 @@
 #EXTM3U
 # TiviMate MOVIES - HRT ENZ VOD (prevodi unaprijed/unazad)
 
+#EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 3 05-05-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 3 05-05-2026
+https://streaming.hrt.hr/webstream/smil:VC8qJX9sQwpVqWeS.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-type="video" tvg-name="Otvoreno 05-05-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Otvoreno 05-05-2026
+https://streaming.hrt.hr/webstream/smil:Vb8gXYAYrHPycTgf.smil/playlist.m3u8
+
 #EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 2 05-05-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 2 05-05-2026
 https://streaming.hrt.hr/webstream/smil:TSnnBukh4afd4tca.smil/playlist.m3u8
 
@@ -39,10 +45,4 @@ https://streaming.hrt.hr/webstream/smil:2eJvTcJRahBkCzhs.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 3 02-05-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 3 02-05-2026
 https://streaming.hrt.hr/webstream/smil:J8DvBPhJYJJYYgga.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 2 02-05-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 2 02-05-2026
-https://streaming.hrt.hr/webstream/smil:uaTcvCwr48ZpHwwe.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-type="video" tvg-name="Regionalni dnevnik 02-05-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Regionalni dnevnik 02-05-2026
-https://streaming.hrt.hr/webstream/smil:2ycKSfysDs2SZckW.smil/playlist.m3u8
 
