@@ -1,7 +1,7 @@
 name: HRT ENZ Streamovi
 on:
   schedule:
-    - cron: '05 4,13,17 * * *'  # 6:30, 16:30 i 20:30 svaki dan
+    - cron: '05 3,13,17 * * *'  # 6:30, 16:30 i 20:30 svaki dan
   workflow_dispatch:
     inputs:
       date_override:
