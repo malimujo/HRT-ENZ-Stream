@@ -22,6 +22,9 @@ https://streaming.hrt.hr/webstream/smil:hXD5cazcsMJG7MJX.smil/playlist.m3u8
 #EXTINF:-1 tvg-type="video" tvg-name="Otvoreno 22-09-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Otvoreno 22-09-2026
 https://streaming.hrt.hr/webstream/smil:DCme66Cg7Yg5JXYF.smil/playlist.m3u8
 
+#EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 2 22-09-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 2 22-09-2026
+https://streaming.hrt.hr/webstream/smil:kV2hTfx2puxKVgcy.smil/playlist.m3u8
+
 #EXTINF:-1 tvg-type="video" tvg-name="Regionalni dnevnik 22-09-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Regionalni dnevnik 22-09-2026
 https://streaming.hrt.hr/webstream/smil:APnWPvqwh9dUfQvR.smil/playlist.m3u8
 
@@ -42,7 +45,4 @@ https://streaming.hrt.hr/webstream/smil:huS6VS38bfMjE5S8.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-type="video" tvg-name="Dnevnik u podne 21-09-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik u podne 21-09-2026
 https://streaming.hrt.hr/webstream/smil:7ahP6QPzGx7AXxPA.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 3 20-09-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 3 20-09-2026
-https://streaming.hrt.hr/webstream/smil:YAzdbCNEvM9YawNm.smil/playlist.m3u8
 
