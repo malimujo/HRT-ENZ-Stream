@@ -1,6 +1,12 @@
 #EXTM3U
 # TiviMate MOVIES - HRT ENZ VOD (prevodi unaprijed/unazad)
 
+#EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 3 24-10-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 3 24-10-2026
+https://streaming.hrt.hr/webstream/smil:826JvAqfeQTHapcM.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 2 24-10-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 2 24-10-2026
+https://streaming.hrt.hr/webstream/smil:VHjUerXf6UsBhQJs.smil/playlist.m3u8
+
 #EXTINF:-1 tvg-type="video" tvg-name="Regionalni dnevnik 24-10-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Regionalni dnevnik 24-10-2026
 https://streaming.hrt.hr/webstream/smil:9QMxbkcUHcjhVXs3.smil/playlist.m3u8
 
@@ -39,10 +45,4 @@ https://streaming.hrt.hr/webstream/smil:Pd4zmF2npXWHDPrW.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 2 21-10-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 2 21-10-2026
 https://streaming.hrt.hr/webstream/smil:eEEG84EYHfeXzyrS.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-type="video" tvg-name="Regionalni dnevnik 21-10-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Regionalni dnevnik 21-10-2026
-https://streaming.hrt.hr/webstream/smil:KqwphGPnvjFArAWj.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-type="video" tvg-name="Dnevnik u podne 21-10-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik u podne 21-10-2026
-https://streaming.hrt.hr/webstream/smil:yHwwJKTbJKaKjamw.smil/playlist.m3u8
 
