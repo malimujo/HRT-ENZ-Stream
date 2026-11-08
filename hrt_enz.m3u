@@ -1,6 +1,12 @@
 #EXTM3U
 # TiviMate MOVIES - HRT ENZ VOD (prevodi unaprijed/unazad)
 
+#EXTINF:-1 tvg-type="video" tvg-name="Nedjeljom u 2 08-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Nedjeljom u 2 08-11-2026
+https://streaming.hrt.hr/webstream/smil:MfnyRsjEDePfR7Qv.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-type="video" tvg-name="Dnevnik u podne 08-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik u podne 08-11-2026
+https://streaming.hrt.hr/webstream/smil:FnEByVsdW5Dfk4rc.smil/playlist.m3u8
+
 #EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 3 07-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 3 07-11-2026
 https://streaming.hrt.hr/webstream/smil:Q29NqVnJvKVEB2AD.smil/playlist.m3u8
 
@@ -39,10 +45,4 @@ https://streaming.hrt.hr/webstream/smil:CuK2SQyVPrfVFx7e.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-type="video" tvg-name="Dnevnik u podne 05-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik u podne 05-11-2026
 https://streaming.hrt.hr/webstream/smil:4t2pCSnw6GH9XHjb.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 3 04-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 3 04-11-2026
-https://streaming.hrt.hr/webstream/smil:xebBMtcVXuK983VM.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-type="video" tvg-name="Otvoreno 04-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Otvoreno 04-11-2026
-https://streaming.hrt.hr/webstream/smil:WNbWDhDWXGF9sQuX.smil/playlist.m3u8
 
