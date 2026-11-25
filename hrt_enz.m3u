@@ -1,6 +1,18 @@
 #EXTM3U
 # TiviMate MOVIES - HRT ENZ VOD (prevodi unaprijed/unazad)
 
+#EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 3 24-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 3 24-11-2026
+https://streaming.hrt.hr/webstream/smil:6w5W5WH6wfDgnWsu.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-type="video" tvg-name="Otvoreno 24-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Otvoreno 24-11-2026
+https://streaming.hrt.hr/webstream/smil:43KzHzRgHCECYrNm.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 2 24-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 2 24-11-2026
+https://streaming.hrt.hr/webstream/smil:xXVdaYVr7MyKSvrj.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-type="video" tvg-name="Regionalni dnevnik 24-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Regionalni dnevnik 24-11-2026
+https://streaming.hrt.hr/webstream/smil:sG7WqpBvezpN36da.smil/playlist.m3u8
+
 #EXTINF:-1 tvg-type="video" tvg-name="Dnevnik u podne 24-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik u podne 24-11-2026
 https://streaming.hrt.hr/webstream/smil:3zdJRFweanWEk8pf.smil/playlist.m3u8
 
@@ -33,16 +45,4 @@ https://streaming.hrt.hr/webstream/smil:xgvZmaXjj6GCfGw9.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 3 21-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 3 21-11-2026
 https://streaming.hrt.hr/webstream/smil:THDvs6HP8ZrdDetY.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 2 21-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 2 21-11-2026
-https://streaming.hrt.hr/webstream/smil:6xe3MW8QXPuuv6Sf.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-type="video" tvg-name="Regionalni dnevnik 21-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Regionalni dnevnik 21-11-2026
-https://streaming.hrt.hr/webstream/smil:RvvdFDYRt9hTCjyB.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-type="video" tvg-name="Dnevnik u podne 21-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik u podne 21-11-2026
-https://streaming.hrt.hr/webstream/smil:aqwapqXxuPNACjzH.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-type="video" tvg-name="Dnevnik 3 20-11-2026" tvg-logo="https://www.hrt.hr/favicon.ico" group-title="Movies",Dnevnik 3 20-11-2026
-https://streaming.hrt.hr/webstream/smil:H4Fy3SFabe6mrNYJ.smil/playlist.m3u8
 
